@@ -1,0 +1,54 @@
+# ==========================================
+# Project SOO P2P Swarm Architecture - .gitignore
+# ==========================================
+
+# --- Node & Next.js ---
+node_modules/
+.next/
+out/
+build/
+dist/
+.turbo/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Rust & Tauri Desktop Artifacts ---
+src-tauri/target/
+*.pdb
+
+# --- Python Environment & Sidecar ---
+backend-sidecar/venv/
+backend-sidecar/env/
+backend-sidecar/__pycache__/
+backend-sidecar/dist/
+backend-sidecar/build/
+backend-sidecar/*.egg-info/
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Environment & Secrets ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- IDE & OS Metadata ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
